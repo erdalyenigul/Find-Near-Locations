@@ -78,7 +78,7 @@ export default {
       this.loading = true;
       this.headInfo = true;
       console.log(this.search);
-      axios.get(`https://api.geonames.org/postalCodeSearchJSON?placename=${this.search}&maxRows=1&username=erdalyenigul`)
+      axios.get(`http://api.geonames.org/postalCodeSearchJSON?placename=${this.search}&maxRows=1&username=erdalyenigul`)
       .then((response) => {
         console.log(response);
         this.loadingErrorMsg = false;
@@ -133,7 +133,7 @@ export default {
       }
     },
     getLocations() {
-      axios.get(`https://api.geonames.org/findNearbyJSON?lat=${this.latitude}&lng=${this.longitude}&username=erdalyenigul&radius=300&maxRows=100`)
+      axios.get(`http://api.geonames.org/findNearbyJSON?lat=${this.latitude}&lng=${this.longitude}&username=erdalyenigul&radius=300&maxRows=100`)
       .then((response) => {
         this.cityName = response.data.geonames[0].adminName1;
         this.getImages(response.data.geonames);
