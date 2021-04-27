@@ -2,7 +2,7 @@
   <div class="detail">
     <button @click="goBack()" class="btn primary backBtn"><i class="far fa-arrow-alt-circle-left"></i></button>
     <div class="img" v-if="locationDetail.img"><img :src="locationDetail.img" :alt="locationDetail.place"></div>
-    <div class="img" v-else><img src="https://www.translationvalley.com/wp-content/uploads/2020/03/no-iamge-placeholder.jpg" alt="No image"></div>
+    <div class="img" v-else><img src="@/assets/images/no-image-placeholder.jpg" alt="No image"></div>
     
     <div class="info">
       <ul>
