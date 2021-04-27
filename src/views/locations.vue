@@ -77,10 +77,8 @@ export default {
     searchLocation() {
       this.loading = true;
       this.headInfo = true;
-      console.log(this.search);
       axios.get(`https://secure.geonames.org/postalCodeSearchJSON?placename=${this.search}&maxRows=1&username=erdalyenigul`)
       .then((response) => {
-        console.log(response);
         this.loadingErrorMsg = false;
         this.latitude = response.data.postalCodes[0].lat;
         this.longitude = response.data.postalCodes[0].lng;
