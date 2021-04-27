@@ -39,7 +39,7 @@
           <span class="img">
             <!-- <img v-if="location.img != null" :src="location.img" alt=""> -->
             <img v-if="location.img != null" v-lazy="location.img" alt="">
-            <img v-else src="@/assets/images/no-image-placeholder.jpg" alt="">
+            <img v-else src="@/assets/images/no-image-placeholder.jpeg" alt="">
           </span>
           <span>{{ location.place }} / {{ location.city }}</span>
         </router-link>
