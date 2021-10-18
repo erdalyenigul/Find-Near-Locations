@@ -1,9 +1,6 @@
 # Find near locations
 ## VueJs NuxtJs
 
-## Demo
-https://location-onedio.appspot.com/
-
 ## Project setup
 ```
 npm install
